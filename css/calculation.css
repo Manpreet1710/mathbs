@@ -1,0 +1,150 @@
+/* breadcrub style */
+.hvr-effect:hover {
+  text-decoration: underline !important;
+}
+/* close */
+
+/* styling some layout heading and example hading and reset_ct innercontent */
+h1 {
+  margin: 24px 0 10px;
+  font-weight: 400 !important;
+  font-size: 1.5rem !important;
+  line-height: 37px !important;
+}
+.example_heading {
+  margin: 2px -2px 12px;
+  padding: 2px 8px;
+  background: hsl(50, 100%, 96%);
+  border-radius: 8px;
+  color: #333;
+  font-size: 20px !important;
+}
+.heading {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  font-weight: 900;
+  color: rgb(0, 0, 255);
+}
+.heading_section {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 12px;
+  overflow: hidden;
+}
+.anchor_go_top_home {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgb(31, 66, 255) !important;
+  text-align: left;
+  font-style: normal;
+}
+.reset_ct .exampleImg {
+  text-align: center;
+}
+.reset_ct .exampleImg img {
+  max-width: 300px;
+}
+.same-font {
+  font-family: 'Nunito', sans-serif;
+}
+.same-font:visited {
+  color: #7e51a7;
+}
+
+/* close */
+
+/* Math Example styling  and styling 4 by 5*/
+.intbl {
+  display: inline-table;
+  text-align: center;
+  vertical-align: 40%;
+  margin: 0 2px;
+  border-collapse: collapse;
+}
+em {
+  display: table-row;
+  text-align: center;
+  border-bottom: solid #333 1px;
+  font-size: 93%;
+  font-style: inherit;
+  line-height: 130%;
+}
+strong {
+  display: table-row;
+  text-align: center;
+  font-weight: inherit;
+  font-size: 93%;
+  line-height: 110%;
+}
+.example {
+  margin: 20px 0 30px 0px;
+  background-color: hsl(214, 100%, 95%);
+  padding: 5px 14px 1px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 3px hsl(214, 100%, 25%);
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .example {
+    margin: 0;
+  }
+} /* close */
+
+/* section-related-links */
+article {
+  padding: 15px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.article_heading {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.seciton-related-links {
+  flex-direction: column;
+  padding: 0px;
+  display: block;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 12px;
+  overflow: hidden;
+}
+.percentage-related-links {
+  padding: 10px 20px;
+}
+/* close */
+
+/* convert a decimal to fraction styling */
+.fraction_steps li {
+  color: hsl(214, 100%, 25%);
+  list-style-type: disc;
+  padding-bottom: 7px;
+}
+.large {
+  color: hsl(50, 100%, 28%);
+  font-size: 20px;
+  font-weight: 600;
+}
+.larger {
+  color: hsl(214, 65%, 46%);
+  font-size: 19px;
+}

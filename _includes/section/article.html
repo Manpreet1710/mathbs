@@ -1,0 +1,54 @@
+<div class="row article_row">
+    <div class="main  owl-carousel owl-theme">
+        {% for carusel in site.data.bio.bioList %}
+        <div class="col-12">
+            <div class="CarouselContainer">
+                <div class="testimonials">
+                    <img alt="quotes" src="{{carusel.quote}}">
+                </div><br>
+                <div class="bio">
+                    <img alt="parent" src="{{carusel.image}}" style="border-radius: 50%;"><br>
+                </div>
+                <div class="article">{{carusel.bio}}
+                    <div class="sc-bxivhb"> <strong> {{carusel.name}} </strong></div>
+                    <div class="sc-bxivhb"> {{carusel.tagline}}</div>
+                </div>
+
+                <div class="testimonials2">
+                    <img alt="quotes" src="{{carusel.quote2}}" class="image">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            mouse: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsiveClass: true,
+            // responsive: {
+            //     0: {
+            //         items: 1,
+            //         nav: true,
+            //         loop: false
+            //     },
+            //     768: {
+            //         items: 2,
+            //         nav: true,
+            //         loop: true
+            //     }
+            // }
+
+        })
+    })
+</script>

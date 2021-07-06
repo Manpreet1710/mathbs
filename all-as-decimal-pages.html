@@ -1,0 +1,59 @@
+---
+title: All as decimal pages
+permalink: all-as-decimal-pages
+---
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Decimals, Fractions and Percentages">
+    <meta name="description" content="All as decimal pages">
+    <meta name="og:description" content="All as decimal pages">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="{{site.name}}">
+    <meta property="og:url" content="{{site.url | append:  page.url}}">
+    <link rel="canonical" href="{{site.url | append:  page.url}}">
+    <meta name="author" content="Harshit Raghav">
+
+
+    <title>{{page.title}}</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- add OWL-css-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/footer.css' | relative_url }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+{%- include header.html -%}
+
+<body>
+    <div class="container-fluid text-center" style="margin: 90px 0;">
+        <h1 class="mb-5 as-percentage-heading">{{page.title}}</h1>
+        <div class="row">
+            {% for post in site.data.decimal%}
+            {% assign new_var = post.value | append: '-' | append: post.value2 %}
+            <h6 class="col-md-3 lib-h2">
+                <a class="anchor_style" href="/all-as-decimal-pages/{{new_var}}-as-a-decimal">
+                    {{ new_var | replace: '-', '/' }} as a decimal
+                </a>
+            </h6>
+            {% endfor %}
+        </div>
+    </div>
+    {%- include footer.html -%}
+    {% include scripts.html %}
+</body>
+
+</html>

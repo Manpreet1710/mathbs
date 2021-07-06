@@ -1,0 +1,47 @@
+<!-- example section  -->
+<!-- example no 1 -->
+{% assign results = 0.000 | plus:value | divided_by: value2 %}
+{% assign results2 = results | times: 100 %}
+
+<h4 class="heading" id="Method-3-to-convert-{{value}}/{{value2}}-as-a-percent"> Method 3 to convert {{value}}/{{value2}}
+    as a percent ?</h4>
+<p style="color:hsl(0, 100%, 60%); font-size: 30px; font-weight: 600;">
+    Or Move the Decimal 2 Places
+</p>
+<p>After dividing, instead of multiplying by 100 we can just move the decimal point 2 places to the right, then add the
+    %</p>
+<div class="example">
+    <h3 class="example_heading">Example: Convert
+        <span class="intbl">
+            <em>{{value}}</em>
+            <strong>{{value2}}</strong>
+        </span>
+        as a percent?
+    </h3>
+    <p>First divide
+        {{value}} by {{value2}}:</p>
+    <p class="text-center" style="color:hsl(50, 100%, 28%); font-size:25px">{{value}} ÷ {{value2}} = {{ results }}
+    </p>
+    <p>Move the decimal point 2 places to the right
+    <p>
+
+    <div class="decimalPointPlaces d-flex justify-content-around" style="font-size: 25px; font-weight: 600;">
+        <div class="results">
+            <span class="intbl">
+                <strong>{{results | append: '%' }}</strong>
+            </span>
+        </div>
+        <div class="results">
+            <span class="intbl" style="color: #ec00af">
+                <strong>{{results | append: '%' }}</strong>
+            </span>
+            <p style="color:hsl(0, 100%, 60%)">2 places</p>
+        </div>
+        <div class="results2">
+            <span class="intbl">
+                <strong>{{results2 | append: '%' }}</strong>
+            </span>
+        </div>
+    </div>
+    <p>Remember to add the "%" sign: {{results2 | append: '%' }}</p>
+</div>

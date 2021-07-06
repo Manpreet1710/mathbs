@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row right-bg-img m-0 p-0">
+        <div class="col-md-12 text-center m-0 p-0">
+            <h1>
+                {{site.data.home.h1}}
+            </h1>
+            <p class="paragraph mx-auto">
+                {{site.data.home.paragraph}}
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="d-flex justify-content-center flexBox">
+            <div class="box px-4 py-4">
+                <h6>{{site.data.home.h6}}</h6>
+                <h5 class="mb-0 heading">
+                    <i class="fas fa-location-arrow"></i>
+                    <strong>{{site.data.home.strong}}</strong>
+                </h5>
+                <button class="btn mt-3 text-white" style="background: #0135E1;">{{site.data.home.btn}}</button>
+            </div>
+            <div class="box2 px-4 py-4">
+                <h6>{{site.data.home.h6}}</h6>
+                <h5 class="mb-0 heading">
+                    <i class="fas fa-location-arrow"></i>
+                    <strong>{{site.data.home.strong}}</strong>
+                </h5>
+                <button class="btn text-white mt-3" style="background: #01a3fc;">{{site.data.home.btn}}</button>
+            </div>
+        </div>
+    </div>
+    {%- include section/sub_section.html -%}
+</div>
+<link rel="stylesheet" href="{{ 'css/homepage.css' | relative_url }}">

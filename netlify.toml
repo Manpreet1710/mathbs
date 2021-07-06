@@ -1,0 +1,39 @@
+[[redirects]]
+  from = "/all-factors-of-a-number-pages"
+  to = "https://mb-factorsofx.netlify.app/all-factors-of-a-number-pages"
+  force = true
+  status = 200
+
+
+[[redirects]]
+  from = "/all-factors-of-a-number-pages/sitemap.xml"
+  to = "https://mb-factorsofx.netlify.app/sitemap.xml"
+  force = true
+  status = 200
+
+[[redirects]]
+  from = "/all-factors-of-a-number-pages*"
+  to = "https://mb-factorsofx.netlify.app/all-factors-of-a-number-pages/:splat"
+  force = true
+  status = 200
+  
+  
+[[redirects]]
+  from = "/blog"
+  to = "https://mathbigblog.netlify.app/blog"
+  force = true
+  status = 200
+
+
+[[redirects]]
+  from = "/blog/sitemap.xml"
+  to = "https://mathbigblog.netlify.app/sitemap.xml"
+  force = true
+  status = 200
+
+[[redirects]]
+  from = "/blog*"
+  to = "https://mathbigblog.netlify.app/blog/:splat"
+  force = true
+  status = 200
+  

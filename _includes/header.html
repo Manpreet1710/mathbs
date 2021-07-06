@@ -1,0 +1,53 @@
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/" title="mathbig">
+                <img src="{{site.logo}}" alt="mathbig.logo" style="width:40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/all-as-fraction-pages">
+                            As a fraction
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/all-as-decimal-pages">
+                            As a decimal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/all-as-percentage-pages">
+                            As a percent
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link">
+                            More
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {%- for item in site.data.header -%}
+                            <li>
+                                <a class="nav-link" style="text-align: left !important;" href="{{item.url}}">
+                                    {{item.name}}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

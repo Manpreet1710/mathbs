@@ -1,0 +1,17 @@
+<div class="row row__style3  mx-0 my-5">
+    <div class="col-8 mx-auto">
+        <h2 class="text-center">How are we different?</h2>
+        <div class="row mt-5">
+            {%- for item in site.data.services.servicesList -%}
+            <div class="col-lg-4 col-md-6 info__card aos-init aos-animate text-center" data-aos="fade-up">
+                <div class="icon">
+                    <img src="{{item.image}}" class="img-fluid" alt="">
+                </div>
+                <div class="content">
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>

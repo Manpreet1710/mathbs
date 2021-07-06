@@ -1,0 +1,38 @@
+<!-- example section  -->
+<!-- example no 1 -->
+{%- assign value = page.value -%}
+{%- assign value2 = page.value2 -%}
+{% assign results = 0.000 | plus:value | divided_by: value2 %}
+
+
+<h4 class="heading" id="Steps-to-convert-{{value}}/{{value2}}-to-decimal?">
+    Steps to convert {{value}}/{{value2}} to decimal
+</h4>
+
+<p>
+    <b> Steps:</b>
+    <li><a href="#" class="text-decoration-none">
+            Just divide the top of the fraction by the bottom, and read off the answer!
+        </a>
+    </li>
+</p>
+<div class="example">
+    <h3 class="example_heading">Example: Convert
+        <span class="intbl">
+            <em>{{value}}</em>
+            <strong>{{value2}}</strong>
+        </span>
+        as a decimal?
+    </h3>
+    <p>Divide
+        {{value}} by {{value2}}: <b>{{value}} ÷ {{value2}} = {{ results }}</b>
+    </p>
+    <p>Answer:
+        <span class="intbl">
+            <em>{{value}}</em>
+            <strong>{{value2}}</strong>
+        </span>
+        = <b>{{results }}</b>
+    </p>
+
+</div>

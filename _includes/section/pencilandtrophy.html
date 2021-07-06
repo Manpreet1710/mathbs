@@ -1,0 +1,24 @@
+<div class="row my-5 bgImg mx-0" style="padding-top:270px">
+    <div class="col-md-11 mx-auto text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container_content">
+                    <div class="homepage_pencil"></div>
+                    <div class="homepage_trophy"></div>
+                    <span>{{site.data.pencilTrophy.span}}</span>
+                    <h2>{{site.data.pencilTrophy.h2}}</h2>
+                    <p class="paragraph2 mx-auto">
+                        {{site.data.pencilTrophy.paragraph}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {%- include section/view_our_program.html -%}
+    </div>
+</div>
+
+{%- include section/services.html -%}
+{%- include section/ourfeatures.html -%}
+{%- include section/25MillionMathClasses.html -%}
+<link rel="stylesheet" href="{{ 'css/pencilandtrophy.css' | relative_url }}">
+<link rel="stylesheet" href="{{ 'css/ourfeatures.css' | relative_url }}">

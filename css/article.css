@@ -1,0 +1,44 @@
+.article_row {
+  position: relative;
+}
+.CarouselContainer {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+.testimonials {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.testimonials2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.article {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  font-style: normal;
+  flex-basis: 100%;
+  padding-left: 120px;
+}
+.bio img {
+  height: 250px;
+  width: 250px !important;
+}
+
+@media (max-width: 768px) {
+  .CarouselContainer {
+    flex-direction: column;
+  }
+  .article {
+    padding-left: 0;
+  }
+}

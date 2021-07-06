@@ -1,0 +1,50 @@
+<!-- example section  -->
+<!-- example no 1 -->
+{%- assign value = page.value -%}
+{%- assign value2 = page.value2 -%}
+{% assign results = 0.000 | plus:value | divided_by: value2 %}
+{% assign results2 = results | times: 100 %}
+
+
+<h4 class="heading" id="Method-1-to-convert-{{value}}/{{value2}}-as-a-percent"> Method 1 to convert
+    {{value}}/{{value2}} as a percent ?</h4>
+<p>
+    <b> Steps:</b>
+    <li>
+        <a class="text-decoration-none">
+            Divide the top of the fraction by the bottom,
+        </a>
+    </li>
+    <li>
+        <a class="text-decoration-none ">
+            Then multiply the result by 100 and read off the answer !
+        </a>
+    </li>
+
+</p>
+<div class="example">
+    <h3 class="example_heading">Example: Convert
+        <span class="intbl">
+            <em>{{value}}</em>
+            <strong>{{value2}}</strong>
+        </span>
+        as a percent?
+    </h3>
+    <p>First divide
+        {{value}} by {{value2}}:
+        {{value}} ÷ {{value2}} = {{ results }}</p>
+    <p>Then multiply by 100: {{results}} × 100 = {{results2}}</p>
+    <p>Answer:
+        <span class="intbl">
+            <em>{{value}}</em>
+            <strong>{{value2}}</strong>
+        </span>
+        = <b>{{results2 | append: '%' }}</b>
+    </p>
+    <p>(Remember to put the "%" sign so people know it is "per 100")</p>
+</div>
+
+
+<div class="method2 mt-3">
+    {%- include percentage/method2.html -%}
+</div>

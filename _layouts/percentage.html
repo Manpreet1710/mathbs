@@ -1,0 +1,201 @@
+---
+layout: percentage
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Decimals, Fractions and Percentages">
+    <meta name="description"
+        content="See step by step calculations for converting {{page.value}}/{{page.value2}} to percentage. Details to convert fractions as a percent are provided in a simple to understand language.">
+    <meta name="og:description"
+        content="See step by step calculations for converting {{page.value}}/{{page.value2}} to percentage. Details to convert fractions as a percent are provided in a simple to understand language.">
+    <meta property="og:title" content="{{  page.title | default: site.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="{{site.name}}">
+    <meta property="og:url" content="{{site.url | append:  page.url}}">
+    <link rel="canonical" href="{{site.url | append:  page.url}}">
+    <meta name="author" content="Harshit Raghav">
+
+
+    <title>What is {{page.value}}/{{page.value2}} as a percent? See answer and step by step calculation</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- add OWL-css-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/calculation.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/footer.css' | relative_url }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "{{site.siteurl}}",
+            "logo": "{{site.siteurl}}{{site.logo}}" 
+          }
+    </script>
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "{{site.name}}",
+        "alternateName": "{{site.alternateName}}",
+        "url": "{{site.siteurl}}"}
+    </script>
+
+    {%- if dataToShow.faqList.size > 0 -%}
+    <script type="application/ld+json">
+        {
+       "@context": "http://schema.org",
+       "@type": "FAQPage",
+       "mainEntity": [
+           {%- for item in dataToShow.faqList-%}
+           {%- if forloop.last == true -%}
+           {"@type": "Question",
+           "name": "{{item.Question}}",
+           "acceptedAnswer": {
+             "@type": "Answer",
+             "text": "{{item.Answer}}"
+           }
+         }
+           {%- else -%}
+           {"@type": "Question",
+           "name": "{{item.Question}}",
+           "acceptedAnswer": {
+             "@type": "Answer",
+             "text": "{{item.Answer}}"
+           }
+         },
+         {%- endif -%}
+           {%- endfor -%}
+      ]
+      }
+    </script>
+    {%- endif -%}
+
+    {%- if page.tool -%}
+    {%- include Rating/structureddata.html -%}
+    {%- endif -%}
+
+    {%- include google-analytics.html -%}
+</head>
+
+<body>
+    {%- include header.html -%}
+    <div class="container-fluid" style="margin-top: 70px;">
+        <div class="row px-2">
+            <div class="col-lg-10 col-md-12 mx-auto">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="text-dark hvr-effect">Home</a></li>
+                        <li class="breadcrumb-item">
+                            <a href="/all-as-percentage-pages" class="text-dark hvr-effect">All as percentage
+                                pages</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">{{page.value}}/{{page.value2}} as a
+                            percent</li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="heading_section">
+                            <div class="percentage-heading">
+                                <h1>What is {{page.value}}/{{page.value2}} as a percent?</h1>
+                            </div>
+                            <div class="go_to_home">
+                                <a href="/all-as-percentage-pages" class="anchor_go_top_home">Go back to 'All as
+                                    percentage pages' > </a>
+                            </div>
+                            <hr class="header-section w-100 m-0" style="margin-bottom: 1rem !important;">
+                        </div>
+
+                        {%- assign value = page.value -%}
+                        {%- assign value2 = page.value2 -%}
+                        {% assign result = 0.000 | plus:value | divided_by: value2 %}
+                        {% assign result2 = result | times: 100 %}
+
+                        <div class="reset_ct py-3">
+                            <p class="example_paragraph">
+                                {{page.value}}/{{page.value2}} is {{result2 | append: '%'}} as a
+                                percent
+                            </p>
+                            <h4> <b> How to convert fractions as percent</b></h4>
+                            {%- include percentage/convert-fractions-as-percent/content.html -%}
+                        </div>
+
+                        <div class="method1">
+                            {%- include percentage/method.html -%}
+                        </div>
+
+                        <div class="some_examples mt-3">
+                            <h4 class="heading" id="Example-of-fractions-in-real-life-1">
+                                {{site.data.percentage_data.example.ex1}}</h4>
+                            <p>{{site.data.percentage_data.example.def1}}</p>
+                            <h4 class="heading" id="Example-of-fractions-in-real-life-2">
+                                {{site.data.percentage_data.example.ex2}}</h4>
+                            <p> {{site.data.percentage_data.example.def2}}</p>
+                        </div>
+                    </div>
+                    <!-- percentage-pages-links -->
+                    <div class="col-md-3">
+                        <section class="seciton-related-links">
+                            <article>
+                                <h6 class="article_heading">Recommended Pages</h6>
+                            </article>
+                            <div class="percentage-related-links">
+                                <!-- Recommended Pages -->
+                                {%- for entry in site.data.categories.percentage -%}
+                                {% assign URL = entry.value | append: '-' | append: entry.value2 %}
+                                <li class="list-unstyled">
+                                    <a class="anchor_style" href="/all-as-percentage-pages/{{URL}}-as-a-percentage">
+                                        {{ URL | replace: '-', '/' }} as a percentage
+                                    </a>
+                                </li>
+                                {%- endfor -%}
+                            </div>
+                        </section>
+
+                        <section class="seciton-related-links">
+                            <article>
+                                <h6 class="article_heading">Users also
+                                    visited </h6>
+                            </article>
+                            <div class="percentage-related-links">
+
+                                {%- for URL in page.randomURLS -%}
+                                {%- assign apendUrl = URL[0] | append: '-' | append: URL[1] -%}
+                                <li class="list-unstyled">
+                                    <a class="anchor_style"
+                                        href="/all-as-percentage-pages/{{apendUrl}}-as-a-percentage">
+                                        {{ apendUrl | replace: '-', '/' }} as a percentage
+                                    </a>
+                                </li>
+                                {%- endfor -%}
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%- include Rating/rating.html -%}
+
+    {%- include footer.html -%}
+    {% include scripts.html %}
+</body>
+
+</html>
+<!-- <script src="{{ 'js/percentage.js' | relative_url }}"></script> -->

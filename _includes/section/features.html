@@ -1,0 +1,27 @@
+<div class="row row__style3  mx-0 my-5">
+    <div class="col-md-8 col-11 mx-auto">
+        <h2 class="text-center mb-5">{{site.data.features.h2}}</h2>
+        <div class="row">
+            {%- for item in site.data.features.featuresList -%}
+            <div class="col-md-6 info__card d-md-flex d-block my-3 aos-init aos-animate" data-aos="fade-up">
+                <div class="icon">
+                    <img src="{{item.image}}" class="img-fluid" alt="">
+                </div>
+                <div class="content">
+                    <p class="features_para">{{item.description}}</p>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+        {%- include section/article.html -%}
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mx-0 mb-5">
+        <div class="col-md-11 mx-auto">
+            {%- include section/view_our_program2.html -%}
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="{{ 'css/features.css' | relative_url }}">
+<link rel="stylesheet" href="{{ 'css/article.css' | relative_url }}">

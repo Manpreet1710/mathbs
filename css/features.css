@@ -1,0 +1,10 @@
+.features_para {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .row__style3 {
+    text-align: center;
+  }
+}

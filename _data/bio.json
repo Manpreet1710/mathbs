@@ -1,0 +1,22 @@
+{
+  "bioList": [
+   {
+       "name": "Aarti Chawla",
+       "tagline": "Divij's mother, Grade 5",
+       "image": "/assets/images/1.jpg",
+       "bio": "Divij has been a part of the Cuemath program for the last 2 years and there has been a remarkable improvement in his math aptitude. I believe that's the reason why he was able to secure the gold medal in the International Math Olympiad 2017.",
+       "quote": "/assets/images/quotes.png",
+       "quote2": "/assets/images/quotes_reverse.png"
+
+   },
+   {
+       "name": "Aarti Chawla",
+       "tagline": "Divij's mother, Grade 5",
+       "image": "/assets/images/1.jpg",
+       "bio": "Divij has been a part of the Cuemath program for the last 2 years and there has been a remarkable improvement in his math aptitude. I believe that's the reason why he was able to secure the gold medal in the International Math Olympiad 2017.",
+       "quote": "/assets/images/quotes.png",
+       "quote2": "/assets/images/quotes_reverse.png"
+   }  
+   
+]  
+}

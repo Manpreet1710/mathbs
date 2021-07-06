@@ -1,0 +1,50 @@
+/* sub_section styling.. */
+.container_content {
+  position: relative;
+  top: -250px;
+}
+.paragraph2 {
+  width: 30%;
+}
+.bgImg {
+  position: relative;
+  background: url(../assets/images/bg-center.png) no-repeat center center;
+}
+.homepage_trophy,
+.homepage_pencil {
+  position: relative;
+}
+.homepage_pencil::before {
+  top: 70px;
+  content: '';
+  position: absolute;
+  text-align: 26px;
+  left: 238px;
+  background: url(../assets/images/homepage-pencil.png) no-repeat;
+  height: 150px;
+  width: 150px;
+  background-position: center;
+  background-size: contain;
+}
+.homepage_trophy::before {
+  top: 0px;
+  content: '';
+  position: absolute;
+  text-align: 26px;
+  right: 300px;
+  background: url(../assets/images/homepage-trophy.png) no-repeat;
+  height: 120px;
+  width: 120px;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (max-width: 998px) {
+  .paragraph2 {
+    width: 100%;
+  }
+  .homepage_pencil,
+  .homepage_trophy {
+    display: none;
+  }
+}

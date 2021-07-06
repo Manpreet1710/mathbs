@@ -1,0 +1,309 @@
+---
+layout: fraction
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Decimals, Fractions and Percentages">
+    <meta name="description"
+        content="See step by step calculations for converting {{page.value}} to fraction. Details to convert decimal as a fraction are provided in a simple to understand language.">
+    <meta name="og:description"
+        content="See step by step calculations for converting {{page.value}} to fraction. Details to convert decimal as a fraction are provided in a simple to understand language.">
+     <meta property="og:title" content="{{  page.title | default: site.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="{{site.name}}">
+    <meta property="og:url" content="{{site.url | append:  page.url}}">
+    <link rel="canonical" href="{{site.url | append:  page.url}}">
+    <meta name="author" content="Harshit Raghav">
+
+    <title>What is {{page.value}} as a fraction? See answer and step by step calculation</title>
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- add OWL-css-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/calculation.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/footer.css' | relative_url }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "{{site.siteurl}}",
+            "logo": "{{site.siteurl}}{{site.logo}}" 
+          }
+    </script>
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "{{site.name}}",
+        "alternateName": "{{site.alternateName}}",
+        "url": "{{site.siteurl}}"}
+    </script>
+
+    {%- if dataToShow.faqList.size > 0 -%}
+    <script type="application/ld+json">
+        {
+       "@context": "http://schema.org",
+       "@type": "FAQPage",
+       "mainEntity": [
+           {%- for item in dataToShow.faqList-%}
+           {%- if forloop.last == true -%}
+           {"@type": "Question",
+           "name": "{{item.Question}}",
+           "acceptedAnswer": {
+             "@type": "Answer",
+             "text": "{{item.Answer}}"
+           }
+         }
+           {%- else -%}
+           {"@type": "Question",
+           "name": "{{item.Question}}",
+           "acceptedAnswer": {
+             "@type": "Answer",
+             "text": "{{item.Answer}}"
+           }
+         },
+         {%- endif -%}
+           {%- endfor -%}
+      ]
+      }
+    </script>
+    {%- endif -%}
+    {%- if page.tool -%}
+    {%- include Rating/structureddata.html -%}
+    {%- endif -%}
+    {%- include google-analytics.html -%}
+</head>
+
+<body>
+    {%- include header.html -%}
+    <div class="container-fluid" style="margin-top: 70px;">
+        <div class="row px-2">
+            <div class="col-lg-10 col-md-12 mx-auto">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" class="text-dark hvr-effect">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a href="/all-as-fraction-pages" class="text-decoration-none text-dark hvr-effect">All as
+                                fraction
+                                pages
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            {{page.value}} as a fraction</li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="heading_section">
+                            <div class="fraction-heading">
+                                <h1>What is {{page.value}} as a fraction?</h1>
+                            </div>
+                            <div class="go_to_home">
+                                <a href="/all-as-fraction-pages" class="anchor_go_top_home">Go back to 'All as fraction
+                                    pages
+                                    ' > </a>
+                            </div>
+                            <hr class="header-section w-100 m-0" style="margin-bottom: 1rem !important;">
+                        </div>
+
+                        <div class="reset_ct py-3">
+                            <p class="example_paragraph">
+                                <span>{{page.value}} is</span>
+                                <span class=result></span>/<span class=result2></span> as a fraction
+                            </p>
+
+                            <h4 class="heading"><b>How to convert decimals as fractions</b></h4>
+                            {%- include fraction/convert-decimals-as-a-fractions/content.html -%}
+                        </div>
+
+                        <div class="method1">
+                            {%- include fraction/method.html -%}
+                        </div>
+
+                        <div class="some_examples mt-3 mb-5">
+                            <!-- read-fraction-heading and def -->
+                            <h4 class="heading" id="How-to-read-a-fraction?">
+                                {{site.data.fraction_data.example.ex1}}</h4>
+                            <p>{{site.data.fraction_data.example.def1}}</p>
+
+                            <!-- example - 1 -->
+                            {% assign lessthan_1 = site.data.fraction | where_exp: "item", "item.value < '1'" %}
+                            {%- for item in lessthan_1 -%}
+                            {% if item.value == value %}
+                            <h4 class=" heading" id="Example-of-fractions-in-real-life-1">
+                                {{site.data.fraction_data.example.ex2}}</h4>
+                                <p class="example-1">
+                                    <span>Lets say in a school of</span>
+                                    <span class="den"></span>
+                                    <span>students, there are</span>
+                                    <span class="num"></span>
+                                    <span>boys and remaining are girls.
+                                        We can then simply say the the fraction of boys in this school are
+                                        <span class="result"></span>/<span class="result2"></span>
+                                        and
+                                        ratio of boys to total students is</span>
+                                    <span class=value>{{value}}</span>
+                                </p>
+                                <!-- example - 2 -->
+                                <h4 class="heading" id="Example-of-fractions-in-real-life-2">
+                                    {{site.data.fraction_data.example.ex3}}</h4>
+                                <span>Lets say we have a total of
+                                    <span class="den"></span>
+                                    balls.
+                                </span>
+                                <span>Among these
+                                    <span class="den"></span>
+                                    balls.
+                                </span>
+                                <span class="num"></span>
+                                <span>are white and rest are black. We can then simply say the the fraction of white
+                                    balls
+                                    is
+                                    <span class="result"></span>/<span class="result2"></span>
+                                    , and ratio of white balls to total balls is</span>
+                                <span class=value>{{value}}</span>
+                                {% endif %}
+                                {%- endfor -%}
+
+
+                                <!-- example - 2 -->
+                                {% assign greaterthan_1 = site.data.fraction | where_exp: "item", "item.value > '1'" %}
+                                {%- for item in greaterthan_1 -%}
+                                {% if item.value == value %}
+                                <h4 class=" heading" id="Example-of-fractions-in-real-life-1">
+                                    {{site.data.fraction_data.example.ex2}}</h4>
+                                <p class=" example-1">
+                                    <span>
+                                        Lets say in a school of 5 students, there are 3 boys and remaining are
+                                        girls.
+                                        We can then simply say the the fraction of boys in this school are 3/5 and
+                                        ratio
+                                        of boys to total students is 0.60
+                                    </span>
+                                </p>
+                                <!-- example - 2 -->
+                                <h4 class="heading" id="Example-of-fractions-in-real-life-2">
+                                    {{site.data.fraction_data.example.ex3}}</h4>
+                                <span>
+                                    Lets say we have a total of 20 balls. Among these 20 balls. 12 are white and
+                                    rest
+                                    are
+                                    black. We can then simply say the the fraction of white balls is 12/20 , and
+                                    ratio
+                                    of
+                                    white balls to total balls is 0.60
+                                </span>
+                                {% endif %}
+                                {%- endfor -%}
+                        </div>
+                    </div>
+
+                    <!-- percentage-pages-links -->
+                    <div class="col-md-3">
+                        <section class="seciton-related-links">
+                            <article>
+                                <h6 class="article_heading">Recommended Pages</h6>
+                            </article>
+                            <div class="percentage-related-links">
+                                <!-- Recommended Pages -->
+                                {%- for entry in site.data.categories.fraction -%}
+                                {% assign URL = entry.value%}
+                                <li class="list-unstyled">
+                                    <a class="anchor_style" href="/all-as-fraction-pages/{{URL}}-as-a-fraction">
+                                        {{ URL | replace: '-', '/' }} as a fraction
+                                    </a>
+                                </li>
+                                {%- endfor -%}
+                            </div>
+                        </section>
+                        <section class="seciton-related-links">
+                            <article>
+                                <h6 class="article_heading">Users also
+                                    visited </h6>
+                            </article>
+
+                            <div class="percentage-related-links">
+                                {%- for URL in page.randomURLS -%}
+                                <li class="list-unstyled">
+                                    <a class="anchor_style" href="/all-as-fraction-pages/{{URL}}-as-a-fraction">
+                                        {{ URL | replace: '-', '/' }} as a fraction
+                                    </a>
+                                </li>
+                                {%- endfor -%}
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%- include Rating/rating.html -%}
+
+    {%- include footer.html -%}
+    {% include scripts.html %}
+    <script>
+        let value = '{{value}}'
+        let em = document.getElementsByClassName('em')
+        let den = document.getElementsByClassName('den')
+        let num = document.getElementsByClassName('num')
+        const multiple = value * '{{value2}}'
+        em[0].innerHTML = multiple
+        em[1].innerHTML = multiple
+        em[2].innerHTML = multiple
+        const half = Math.ceil(multiple / 2)
+        for (let i = half; i > 0; i--) {
+            let result = document.getElementsByClassName('result')
+            let result2 = document.getElementsByClassName('result2')
+            let td = document.querySelector('#td')
+            let td2 = document.querySelector('#td2')
+            const upperValue = multiple / i
+            const lowerValue = parseInt('{{value2}}') / i
+            if (
+                !lowerValue.toString().includes('.') &&
+                !upperValue.toString().includes('.')
+            ) {
+                result[0].innerHTML = `${upperValue}`
+                result2[0].innerHTML = `${lowerValue}`
+                result[1].innerHTML = `${upperValue}`
+                result2[1].innerHTML = `${lowerValue}`
+                result[2].innerHTML = `${upperValue}`
+                result2[2].innerHTML = `${lowerValue}`
+                result[3].innerHTML = `${upperValue}`
+                result2[3].innerHTML = `${lowerValue}`
+                result[4].innerHTML = `${upperValue}`
+                result2[4].innerHTML = `${lowerValue}`
+                result[5].innerHTML = `${upperValue}`
+                result2[5].innerHTML = `${lowerValue}`
+                den[0].innerHTML = `${lowerValue}`
+                num[0].innerHTML = `${upperValue}`
+                den[1].innerHTML = `${lowerValue}`
+                den[2].innerHTML = `${lowerValue}`
+                num[1].innerHTML = `${upperValue}`
+                td.innerHTML = '÷' + i
+                td2.innerHTML = '÷' + i
+                break
+            }
+        }
+
+    </script>
+</body>
+
+</html>
